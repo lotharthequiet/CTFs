@@ -1,3 +1,7 @@
+General Command Notes: 
+(Some of these notes have corresponding BASH scripts)
+------------------------------------------------------
+
 To view the file: 
 cat filename.ext
 
