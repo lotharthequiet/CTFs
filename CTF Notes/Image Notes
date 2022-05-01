@@ -1,0 +1,14 @@
+General Image Notes
+-------------------
+
+1. Check the EXIF data.
+
+2. See if anything is encrypted in the COMMENTS section or any other data appears to be encrypted or hashed.
+
+3. Check to see if there are any errors displayed in the EXIF data. This can potentially lead to hidden data.
+
+4. Use BINWALK (binwalk -e filename.ext) to check to see if binary data is hidden in image file.
+
+5. Check for hidden info in the image while viewing the image in an image editor.
+
+6. Try bruteforce stegonography tools.
