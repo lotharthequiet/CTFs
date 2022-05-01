@@ -1,0 +1,1 @@
+Reads from the specified dictionary (line by line) and tries each line as a password as input to the supplied python script.
