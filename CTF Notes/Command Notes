@@ -1,0 +1,18 @@
+To view the file: 
+cat filename.ext
+
+To view the file in HEX: 
+xxd filename.ext
+
+Extract from Image:
+binwalk -e filename.ext
+
+View EXIF data: 
+exiftool filename.ext
+
+View binary file strings: 
+strings -n 10 filename.ext | grep flag
+
+Decode Base64 string: 
+echo "string here" | base64 -d
+
