@@ -14,7 +14,7 @@ binwalk -e filename.ext
 View EXIF data: 
 exiftool filename.ext
 
-View binary file strings: 
+View file strings: 
 strings -n 10 filename.ext | grep flag
 
 Decode Base64 string: 
