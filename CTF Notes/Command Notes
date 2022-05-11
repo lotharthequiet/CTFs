@@ -5,6 +5,9 @@ General Command Notes:
 To view the file: 
 cat filename.ext
 
+To count lines in file:
+cat filename.ext | wc -l
+
 To view the file in HEX: 
 xxd filename.ext
 
