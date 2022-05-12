@@ -2,6 +2,9 @@ General Command Notes:
 (Some of these notes have corresponding BASH scripts)
 ------------------------------------------------------
 
+To view file info: 
+file filename.ext
+
 To view the file: 
 cat filename.ext
 
