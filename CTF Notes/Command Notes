@@ -38,3 +38,6 @@ Directory / File Enum:
 - dirbuster
 - dirb
 - gobuster
+
+RELIABLE Remote Desktop: 
+xfreerdp /bpp:32 /u:administrator /p:letmein123! /v:10.10.116.73:3389
