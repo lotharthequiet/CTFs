@@ -39,5 +39,5 @@ Directory / File Enum:
 - dirb
 - gobuster
 
-RELIABLE Remote Desktop: 
+RELIABLE Remote Desktop:  (Because RDESKTOP now sucks!)
 xfreerdp /bpp:32 /u:administrator /p:letmein123! /v:10.10.116.73:3389
