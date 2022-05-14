@@ -37,3 +37,4 @@ OSINT Sources:
 - Check /tmp folder for write access
 - OS-based CVEs
 - Check for SUDO perms
+- Check for Wifi version and auth type
