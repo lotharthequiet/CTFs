@@ -29,3 +29,11 @@ OSINT Sources:
 - Check for CloudFlare
 - Operating System/port Enumeration
 - Networking discovery
+- Check for open shares
+- Check for hidden shares
+- Check for writable folders/directories
+- Check for writeable files
+- Check for SUID files
+- Check /tmp folder for write access
+- OS-based CVEs
+- Check for SUDO perms
