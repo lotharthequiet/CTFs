@@ -33,6 +33,11 @@ Python 3 — python -m http.server 8000
 RELIABLE Remote Desktop:  (Because RDESKTOP now sucks!)
 xfreerdp /bpp:32 /u:administrator /p:letmein123! /v:10.10.116.73:3389
 
+shodan
+
+recon-ng
+
+
 ENUMERATION: 
 -------------------------------------------------------------------------------
 Directory / File Enum: 
