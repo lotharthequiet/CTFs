@@ -30,17 +30,86 @@ Quick Python Webserver:
 Python 2 — python -m SimpleHTTPServer 8000
 Python 3 — python -m http.server 8000
 
-Find files with SUID permissions: 
-find / -perm -u=s -type f 2>/dev/null
+RELIABLE Remote Desktop:  (Because RDESKTOP now sucks!)
+xfreerdp /bpp:32 /u:administrator /p:letmein123! /v:10.10.116.73:3389
 
+ENUMERATION: 
+-------------------------------------------------------------------------------
 Directory / File Enum: 
 - ffuf
 - dirbuster
 - dirb
 - gobuster
 
-RELIABLE Remote Desktop:  (Because RDESKTOP now sucks!)
-xfreerdp /bpp:32 /u:administrator /p:letmein123! /v:10.10.116.73:3389
-
 Recursive DNS Search: 
 dig google.com @1.1.1.1
+
+Find files with SUID permissions: 
+find / -perm -u=s -type f 2>/dev/null
+
+hostname
+
+uname -a
+
+/proc/version
+
+/etc/issue
+
+PS
+- ps -A: View all running processes
+- ps axjf: View process tree 
+- ps aux: The aux option will show processes for all users (a), display the user that launched 
+  the process (u), and show processes that are not attached to a terminal (x). Looking at the ps aux 
+  command output, we can have a better understanding of the system and potential vulnerabilities.
+  
+env: Shows environment variables
+
+sudo -l: list all commands current user can run using sudo
+
+LS
+- ls: list files in directory
+- ls -al
+
+id username: Shows priv level, group
+
+/etc/passwd: Lists users/home dirs on system
+
+history: shows earlier commands used as current user
+
+ifconfig: Shows network config
+
+ip route: Shows route table
+
+NETSTAT
+netstat -a: shows all listening ports and established connections
+netstat -at: shows all TCP ports
+netstat -au: shows all UDP ports
+netstat -l: show all ports in listen mode
+netstat -tp: list connections with the service name and PID information.
+netstat -i: Shows interface statistics.
+netstat -ano which could be broken down as follows;
+    -a: Display all sockets
+    -n: Do not resolve names
+    -o: Display timers
+
+Find files:
+    find . -name flag1.txt: find the file named “flag1.txt” in the current directory
+    find /home -name flag1.txt: find the file names “flag1.txt” in the /home directory
+    find / -type d -name config: find the directory named config under “/”
+    find / -type f -perm 0777: find files with the 777 permissions (files readable, writable, and executable by all users)
+    find / -perm a=x: find executable files
+    find /home -user frank: find all files for user “frank” under “/home”
+    find / -mtime 10: find files that were modified in the last 10 days
+    find / -atime 10: find files that were accessed in the last 10 day
+    find / -cmin -60: find files changed within the last hour (60 minutes)
+    find / -amin -60: find files accesses within the last hour (60 minutes)
+    find / -size 50M: find files with a 50 MB size
+    find / -writable -type d 2>/dev/null : Find world-writeable folders
+    find / -perm -222 -type d 2>/dev/null: Find world-writeable folders
+    find / -perm -o w -type d 2>/dev/null: Find world-writeable folders
+    find / -perm -o x -type d 2>/dev/null : Find world-executable folders
+    find / -name perl*
+    find / -name python*
+    find / -name gcc*
+    find / -perm -u=s -type f 2>/dev/null: Find files with the SUID bit, which allows us to run the file with a higher privilege level than the current user. 
+
