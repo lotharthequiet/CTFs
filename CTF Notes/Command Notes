@@ -41,3 +41,6 @@ Directory / File Enum:
 
 RELIABLE Remote Desktop:  (Because RDESKTOP now sucks!)
 xfreerdp /bpp:32 /u:administrator /p:letmein123! /v:10.10.116.73:3389
+
+Recursive DNS Search: 
+dig google.com @1.1.1.1
