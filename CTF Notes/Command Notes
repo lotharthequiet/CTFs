@@ -131,3 +131,5 @@ python3 -V: shows python3 version
     
 Get binary capabilities:
 getcap -r / 2>/dev/null
+
+nessus scanner
