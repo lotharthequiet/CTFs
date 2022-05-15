@@ -128,3 +128,6 @@ python3 -V: shows python3 version
     LES (Linux Exploit Suggester): https://github.com/mzet-/linux-exploit-suggester
     Linux Smart Enumeration: https://github.com/diego-treitos/linux-smart-enumeration
     Linux Priv Checker: https://github.com/linted/linuxprivchecker 
+    
+Get binary capabilities:
+getcap -r / 2>/dev/null
