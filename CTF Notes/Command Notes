@@ -88,6 +88,9 @@ ifconfig: Shows network config
 
 ip route: Shows route table
 
+printf "GET / HTTP/1.0\r\n\r\n" | nc 10.10.10.10 80 | head - Views HTTP server type/info
+
+
 NETSTAT
 netstat -a: shows all listening ports and established connections
 netstat -at: shows all TCP ports
