@@ -154,3 +154,6 @@ Option 	Purpose
 -n 	no DNS lookup
 -R 	reverse-DNS lookup for all hosts
 -sn 	host discovery only
+
+Find Siemens PLCs on Web via Google Dorks 
+inurl:/Portal/Portal.mwsl
