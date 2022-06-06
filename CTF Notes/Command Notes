@@ -157,3 +157,12 @@ Option 	Purpose
 
 Find Siemens PLCs on Web via Google Dorks 
 inurl:/Portal/Portal.mwsl
+
+Find WordPress login files via Google Dorks
+inurl:/wp-login.php
+
+WebServer ID:
+whatweb http://test.com
+
+WordPress Scan
+wpscan -v --url http://test.com
